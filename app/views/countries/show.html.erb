@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Country:</strong>
+  <%= @country.country %>
+</p>
+
+<p>
+  <strong>Country code:</strong>
+  <%= @country.country_code %>
+</p>
+
+<div id="airports_wrapper">
+ <%= render @country.airports %>
+ <div id="form">
+  <%= render "airports/form" %>
+ </div>
+</div>
+
+<%= link_to 'Edit', edit_country_path(@country) %> |
+<%= link_to 'Back', countries_path %>

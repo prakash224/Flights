@@ -1,0 +1,5 @@
+<%= form_for([@country, @country.airports.build]) do |f| %>
+    <%= f.text_field :airport_city, placeholder: "Airport City" %>
+    <%= f.text_field :airport_code, placeholder: "Airport Code" %>
+    <%= f.submit %>
+<% end %>

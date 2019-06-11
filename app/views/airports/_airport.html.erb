@@ -1,0 +1,6 @@
+<p>
+<span><%= airport.airport_city %></span>    
+<span><%= airport.airport_code %></span>
+</p>
+<%= link_to "Delete", country_airport_path(@country, airport.id), 
+method: :delete, data: { confirm: "Are you sure?" } %>
